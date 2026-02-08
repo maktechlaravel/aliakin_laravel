@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* Base Styles */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     :root {
       --navy-bg: #0a0f1a;
@@ -42,8 +47,9 @@
 
     .logo-container {
       display: flex;
-      align-items: center;
-      gap: 1rem;
+      align-items: start;
+      flex-direction: column;
+      /* gap: 1rem; */
     }
 
     .logo-container img {
@@ -118,13 +124,21 @@
     }
 
     @media (max-width: 768px) {
-      .app-name { font-size: 1.5rem; }
-      .page-title h1 { font-size: 1.8rem; }
-      .section { padding: 1.2rem; }
-    }
+      .app-name {
+        font-size: 1.5rem;
+      }
 
+      .page-title h1 {
+        font-size: 1.8rem;
+      }
+
+      .section {
+        padding: 1.2rem;
+      }
+    }
   </style>
 </head>
+
 <body>
   <!-- Header (unchanged) -->
   <header class="header">
@@ -137,14 +151,19 @@
   <!-- Title -->
   <section class="page-title">
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Your privacy is our foundation. Learn how Aroo VPN protects your online activity and personal data.</p>
+    <p class="subtitle">Your privacy is our foundation. Learn how Aroo VPN protects your online activity and personal
+      data.</p>
   </section>
 
   <!-- Policy Sections -->
   <main>
     <div class="section">
-      <p>Aroo VPN (“Aroo VPN”, “we”, “our”, or “the Service”) respects your privacy and is committed to protecting it. This Privacy Policy explains what information we collect, how we use it, and the choices you have when using our application.</p>
-      <p>Our service is designed with privacy in mind. We aim to collect as little information as possible to operate the app reliably and securely.</p>
+      <!-- <p>Aroo VPN (“Aroo VPN”, “we”, “our”, or “the Service”) respects your privacy and is committed to protecting it.
+        This Privacy Policy explains what information we collect, how we use it, and the choices you have when using our
+        application.</p> -->
+      <p>AROO VPN ("AROO VPN", "we", "our", or "the Service") respects your privacy and is committed to protecting it. This Privacy Policy explains what information we collect, how we use it, and the choices you have when using our application.</p>
+      <p>Our service is designed with privacy in mind. We aim to collect as little information as possible to operate
+        the app reliably and securely.</p>
     </div>
 
     <div class="section">
@@ -175,7 +194,8 @@
 
     <div class="section">
       <h2>3. Limited Technical Information</h2>
-      <p>To maintain stability and improve performance, the application may process minimal technical information such as:</p>
+      <p>To maintain stability and improve performance, the application may process minimal technical information such
+        as:</p>
       <ul>
         <li>App version</li>
         <li>Crash reports (if enabled by your device or operating system)</li>
@@ -196,7 +216,8 @@
         <li>Google Play Store</li>
         <li>Apple App Store</li>
       </ul>
-      <p>Aroo VPN does not store or process payment card details. Billing information is handled entirely by the platform providers.</p>
+      <p>Aroo VPN does not store or process payment card details. Billing information is handled entirely by the
+        platform providers.</p>
     </div>
 
     <div class="section">
@@ -207,7 +228,8 @@
         <li>Behavioral tracking tools</li>
         <li>Profiling or fingerprinting services</li>
       </ul>
-      <p>Infrastructure providers may process encrypted network traffic solely to deliver the VPN service. They do not have access to user activity or identifiable personal data.</p>
+      <p>Infrastructure providers may process encrypted network traffic solely to deliver the VPN service. They do not
+        have access to user activity or identifiable personal data.</p>
     </div>
 
     <div class="section">
@@ -224,29 +246,35 @@
 
     <div class="section">
       <h2>7. Legal Requests</h2>
-      <p>Because Aroo VPN does not retain activity logs or personal data, we are generally unable to associate network activity with individual users.</p>
-      <p>Any legal requests are handled in accordance with applicable laws, but the absence of stored activity data limits what information can be provided.</p>
+      <p>Because Aroo VPN does not retain activity logs or personal data, we are generally unable to associate network
+        activity with individual users.</p>
+      <p>Any legal requests are handled in accordance with applicable laws, but the absence of stored activity data
+        limits what information can be provided.</p>
     </div>
 
     <div class="section">
       <h2>8. Children’s Privacy</h2>
-      <p>Aroo VPN is not intended for children under the age required by applicable law. We do not knowingly collect personal data from children.</p>
+      <p>Aroo VPN is not intended for children under the age required by applicable law. We do not knowingly collect
+        personal data from children.</p>
     </div>
 
     <div class="section">
       <h2>9. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time. Any updates will be posted on this page with a revised “Last updated” date.</p>
+      <p>We may update this Privacy Policy from time to time. Any updates will be posted on this page with a revised
+        “Last updated” date.</p>
     </div>
 
     <div class="section">
       <h2>10. Contact</h2>
       <p>If you have any questions regarding this Privacy Policy, you may contact us:</p>
-      <p>Email: <a href="mailto:support@aroovpn.com" style="color:#93c5fd;">support@aroovpn.com</a><br>
-      Phone: +44 7405030816<br>
-      Address:<br>
-      10400 Brayford Square<br>
-      London – E1 0SG<br>
-      United Kingdom</p>
+      <p>Email: <a href="mailto:support@aroovpn.com" style="color:#93c5fd;">support@aroovpn.com</a><br></p>
+      <p>
+        Phone: <a href="tell:+447405030816" style="color:#93c5fd;">+44 7405030816</a></p>
+      <p>
+        Address: Suite 10400<br>
+        5 Brayford Square<br>
+        London E1 0SG<br>
+        United Kingdom</p>
     </div>
 
     <div class="section">
@@ -266,4 +294,5 @@
     document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
