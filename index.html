@@ -1,256 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aroo VPN - Privacy Policy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroo VPN - Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #3b82f6;
-            --text-color: #1f2937;
-            --text-light: #6b7280;
-            --background-color: #ffffff;
-            --border-color: #e5e7eb;
-        }
+    :root {
+      --navy-bg: #0a0f1a;
+      --text-light: #f3f4f6;
+      --muted-text: #9ca3af;
+      --accent-gradient: linear-gradient(135deg, #6366f1, #9333ea);
+      --border-color: rgba(255, 255, 255, 0.1);
+      --card-bg: rgba(255, 255, 255, 0.05);
+    }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--navy-bg);
+      color: var(--text-light);
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--border-color);
-        }
+    /* Header (kept same as user version) */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 3rem;
+    }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
 
-        .app-name {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--text-color);
-        }
+    .logo-container img {
+      width: 80px;
+    }
 
-        .page-title {
-            text-align: center;
-            margin: 3rem 0;
-        }
+    .app-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-light);
+      letter-spacing: -0.5px;
+    }
 
-        .page-title h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
+    /* Page Title */
+    .page-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
 
-        .page-title .subtitle {
-            color: var(--text-light);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+    .page-title h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.6rem;
+    }
 
-        .content {
-            max-width: 800px;
-            margin: 0 auto 4rem;
-        }
+    .page-title .subtitle {
+      color: var(--muted-text);
+      font-size: 1.1rem;
+    }
 
-        .policy-section {
-            margin-bottom: 2.5rem;
-        }
+    /* Sections */
+    .section {
+      margin-bottom: 2rem;
+      background: var(--card-bg);
+      padding: 1.8rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+    }
 
-        .policy-section h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: .5rem;
-        }
+    .section h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-        .policy-section p {
-            margin-bottom: 1.2rem;
-        }
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      list-style: disc;
+    }
 
-        .policy-section ul,
-        .policy-section ol {
-            margin-left: 1.5rem;
-            margin-bottom: 1.2rem;
-        }
+    hr {
+      border: none;
+      height: 1px;
+      background: var(--border-color);
+      margin: 2rem 0;
+    }
 
-        .highlight-box {
-            background: #f8fafc;
-            border-left: 4px solid var(--primary-color);
-            padding: 1.5rem;
-            border-radius: 0 8px 8px 0;
-            margin: 1.5rem 0;
-        }
+    footer {
+      text-align: center;
+      color: var(--muted-text);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+      margin-top: 3rem;
+    }
 
-        .footer {
-            text-align: center;
-            border-top: 1px solid var(--border-color);
-            padding: 2rem 0;
-            color: var(--text-light);
-            font-size: .9rem;
-        }
+    @media (max-width: 768px) {
+      .app-name { font-size: 1.5rem; }
+      .page-title h1 { font-size: 1.8rem; }
+      .section { padding: 1.2rem; }
+    }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .header,
-        .page-title,
-        .content {
-            animation: fadeIn .6s ease-out;
-        }
-    </style>
+  </style>
 </head>
-
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="logo-container">
-            <img src="logo.png" alt="Aroo VPN Logo" width="80">
-            <div class="app-name">Aroo VPN</div>
-        </div>
-    </header>
+  <!-- Header (unchanged) -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Aroo VPN Logo">
+      <div class="app-name">Aroo VPN</div>
+    </div>
+  </header>
 
-    <!-- Page Title -->
-    <section class="page-title">
-        <h1>Privacy Policy</h1>
-        <p class="subtitle">Your privacy is our top priority. Learn how Aroo VPN protects your online activity and
-            personal data.</p>
-    </section>
+  <!-- Title -->
+  <section class="page-title">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Your privacy is our foundation. Learn how Aroo VPN protects your online activity and personal data.</p>
+  </section>
 
-    <!-- Content -->
-    <main class="content">
-        <div class="policy-section">
-            <h2>Introduction</h2>
-            <p>Aroo VPN (“we,” “our,” or “us”) is committed to safeguarding your online privacy. This Privacy Policy
-                explains how we collect, use, and protect your data when you use our VPN service and mobile/desktop
-                applications.</p>
-            <p>By using Aroo VPN, you agree to the practices described in this Privacy Policy.</p>
-        </div>
+  <!-- Policy Sections -->
+  <main>
+    <div class="section">
+      <p>Aroo VPN (“Aroo VPN”, “we”, “our”, or “the Service”) respects your privacy and is committed to protecting it. This Privacy Policy explains what information we collect, how we use it, and the choices you have when using our application.</p>
+      <p>Our service is designed with privacy in mind. We aim to collect as little information as possible to operate the app reliably and securely.</p>
+    </div>
 
-        <div class="policy-section">
-            <h2>No-Logs Policy</h2>
-            <p>At Aroo VPN, we operate under a strict <strong>No-Logs Policy</strong>. This means:</p>
-            <ul>
-                <li>We do <strong>not</strong> store or log your browsing activity, connection timestamps, session
-                    duration, bandwidth usage, or IP addresses.</li>
-                <li>We cannot associate any specific network activity or behavior with any user.</li>
-                <li>Your privacy and anonymity online are fully preserved.</li>
-            </ul>
-        </div>
+    <div class="section">
+      <h2>1. No-Logs Policy</h2>
+      <p>Aroo VPN operates under a strict no-logs policy. We do not collect, store, or track:</p>
+      <ul>
+        <li>Browsing activity</li>
+        <li>Traffic content or destinations</li>
+        <li>DNS queries</li>
+        <li>Connection timestamps</li>
+        <li>Session duration</li>
+        <li>Bandwidth usage per user</li>
+        <li>IP addresses linked to user identity</li>
+      </ul>
+      <p>Because this data is not stored, it cannot be shared, sold, or provided to third parties.</p>
+    </div>
 
-        <div class="policy-section">
-            <h2>Information We Collect</h2>
-            <p>To maintain and improve our services, we may collect limited and non-identifiable information:</p>
-            <ul>
-                <li><strong>App Diagnostics:</strong> Crash reports, app version, and performance metrics (only if you
-                    opt in).</li>
-                <li><strong>Basic Account Data:</strong> Email address (if you create an account or contact support).
-                </li>
-                <li><strong>Payment Information:</strong> Managed securely by third-party payment processors — we never
-                    store your full payment details.</li>
-            </ul>
-        </div>
+    <div class="section">
+      <h2>2. Personal Information</h2>
+      <p>Aroo VPN does not require users to create an account or provide personal information such as:</p>
+      <ul>
+        <li>Name</li>
+        <li>Email address</li>
+        <li>Phone number</li>
+      </ul>
+      <p>You can use the service without providing personally identifiable information.</p>
+    </div>
 
-        <div class="policy-section">
-            <h2>How We Use Information</h2>
-            <p>The limited information we collect is used to:</p>
-            <ol>
-                <li>Operate and maintain Aroo VPN services</li>
-                <li>Improve performance and troubleshoot issues</li>
-                <li>Provide customer support and communicate updates</li>
-                <li>Prevent abuse or security threats to the service</li>
-            </ol>
-        </div>
+    <div class="section">
+      <h2>3. Limited Technical Information</h2>
+      <p>To maintain stability and improve performance, the application may process minimal technical information such as:</p>
+      <ul>
+        <li>App version</li>
+        <li>Crash reports (if enabled by your device or operating system)</li>
+        <li>General diagnostic data necessary to maintain service reliability</li>
+      </ul>
+      <p>This information:</p>
+      <ul>
+        <li>Is used only for technical purposes</li>
+        <li>Is not used to identify users</li>
+        <li>Is not used for tracking or advertising</li>
+      </ul>
+    </div>
 
-        <div class="highlight-box">
-            <p><strong>Security Commitment:</strong> All data transmissions are encrypted using industry-standard
-                protocols (including AES-256 and WireGuard). We employ strong security measures to prevent unauthorized
-                access or data exposure.</p>
-        </div>
+    <div class="section">
+      <h2>4. Subscriptions and Payments</h2>
+      <p>Premium subscriptions are processed securely by:</p>
+      <ul>
+        <li>Google Play Store</li>
+        <li>Apple App Store</li>
+      </ul>
+      <p>Aroo VPN does not store or process payment card details. Billing information is handled entirely by the platform providers.</p>
+    </div>
 
-        <div class="policy-section">
-            <h2>Third-Party Services</h2>
-            <p>We may use trusted third-party services to support functionality (e.g., analytics, payment processing, or
-                DNS). These providers are carefully vetted and bound by confidentiality agreements.</p>
-            <p>None of these third parties are allowed to access, collect, or log your VPN browsing data.</p>
-        </div>
+    <div class="section">
+      <h2>5. Third-Party Services</h2>
+      <p>Aroo VPN does not use:</p>
+      <ul>
+        <li>Advertising SDKs</li>
+        <li>Behavioral tracking tools</li>
+        <li>Profiling or fingerprinting services</li>
+      </ul>
+      <p>Infrastructure providers may process encrypted network traffic solely to deliver the VPN service. They do not have access to user activity or identifiable personal data.</p>
+    </div>
 
-        <div class="policy-section">
-            <h2>Data Retention</h2>
-            <p>We retain minimal data strictly necessary for account management and service performance. You may request
-                deletion of your account data at any time by contacting our support team.</p>
-        </div>
+    <div class="section">
+      <h2>6. Security</h2>
+      <p>We use modern encryption and industry-standard security practices to protect VPN connections.</p>
+      <p>We do not:</p>
+      <ul>
+        <li>Modify user traffic</li>
+        <li>Inject advertisements</li>
+        <li>Monitor or inspect browsing activity</li>
+      </ul>
+      <p>Our systems are designed to minimize data handling and reduce privacy risks.</p>
+    </div>
 
-        <div class="policy-section">
-            <h2>Your Privacy Rights</h2>
-            <p>Depending on your region, you may have the right to:</p>
-            <ul>
-                <li>Access the personal data we hold about you</li>
-                <li>Request correction or deletion of your data</li>
-                <li>Withdraw consent for optional data collection (e.g., crash reports)</li>
-                <li>Request portability of your account data</li>
-            </ul>
-            <p>To exercise these rights, please contact us at <strong>privacy@aroovpn.com</strong>.</p>
-        </div>
+    <div class="section">
+      <h2>7. Legal Requests</h2>
+      <p>Because Aroo VPN does not retain activity logs or personal data, we are generally unable to associate network activity with individual users.</p>
+      <p>Any legal requests are handled in accordance with applicable laws, but the absence of stored activity data limits what information can be provided.</p>
+    </div>
 
-        <div class="policy-section">
-            <h2>Changes to This Policy</h2>
-            <p>We may update this Privacy Policy periodically to reflect service or legal changes. The updated version
-                will be posted on this page with a revised “Last Updated” date.</p>
-        </div>
+    <div class="section">
+      <h2>8. Children’s Privacy</h2>
+      <p>Aroo VPN is not intended for children under the age required by applicable law. We do not knowingly collect personal data from children.</p>
+    </div>
 
-        <div class="policy-section">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
-            <p>
-                Email: privacy@aroovpn.com<br>
-                Address: 123 SecureNet Street, Tech City, TC 12345
-            </p>
-        </div>
-    </main>
+    <div class="section">
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any updates will be posted on this page with a revised “Last updated” date.</p>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; <span id="currentYear"></span> Aroo VPN. All rights reserved.</p>
-    </footer>
+    <div class="section">
+      <h2>10. Contact</h2>
+      <p>If you have any questions regarding this Privacy Policy, you may contact us:</p>
+      <p>Email: <a href="mailto:support@aroovpn.com" style="color:#93c5fd;">support@aroovpn.com</a><br>
+      Phone: +44 7405030816<br>
+      Address:<br>
+      10400 Brayford Square<br>
+      London – E1 0SG<br>
+      United Kingdom</p>
+    </div>
 
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
+    <div class="section">
+      <h2>Summary</h2>
+      <p>Privacy is not a feature at Aroo VPN — it is the foundation.</p>
+      <p>We do not collect browsing history, connection logs, or identifiable activity.</p>
+      <p>Our service is designed so your online activity remains private, always.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Aroo VPN. All rights reserved.</p>
+    <p>Last updated: February 8, 2026</p>
+  </footer>
+
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
